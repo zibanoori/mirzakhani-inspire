@@ -11,6 +11,9 @@ function App() {
         <div className="mb-6 text-emerald-600 dark:text-emerald-400">
           <FaInfinity size={64} />
         </div>
+        <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 text-gray-900 dark:text-white">
+          Maryam Mirzakhani
+        </h1>
       </section>
     </div>
   );
