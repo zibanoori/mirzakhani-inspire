@@ -4,6 +4,6 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: import.meta.env.BASE_PATH ?? '/',
+  base: '/mirzakhani-inspire/',
   plugins: [react(), tailwindcss()],
 })
