@@ -14,6 +14,9 @@ function App() {
         <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 text-gray-900 dark:text-white">
           Maryam Mirzakhani
         </h1>
+        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl font-sans">
+          First woman and first Iranian to win the Fields Medal
+        </p>
       </section>
     </div>
   );
