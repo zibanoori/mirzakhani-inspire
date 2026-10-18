@@ -1,18 +1,17 @@
+
 @import "tailwindcss";
+
 @custom-variant dark (&:where(.dark, .dark *));
 
-
-@import "tailwindcss";
-
 :root {
-  --paper: #ddd7c9; 
+  --paper: #ddd7c9;
   --surface: #ffffff;
-  --ink: #2c241b; 
+  --ink: #2c241b;
   --muted: #6b5e50;
   --line: #c4b8a5;
-  --accent: #2F5233; 
+  --accent: #2F5233;
   --accent-soft: #e8f0ea;
-  --gold: #C5A028; 
+  --gold: #C5A028;
   --on-accent: #ffffff;
 }
 
@@ -29,9 +28,9 @@
 }
 
 @theme inline {
-  --font-serif: "Source Serif 4 Variable", serif;
-  --font-sans: "Inter Variable", sans-serif;
-  
+  --font-serif: "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
   --color-paper: var(--paper);
   --color-surface: var(--surface);
   --color-ink: var(--ink);
@@ -43,4 +42,3 @@
   --color-on-accent: var(--on-accent);
 }
 
-@custom-variant dark (&:where(.dark, .dark *));
