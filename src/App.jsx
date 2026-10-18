@@ -10,7 +10,7 @@ function App() {
       className={`min-h-screen bg-paper transition-colors duration-300 ${isDark ? "dark" : ""}`}
     >
       <section className="flex flex-col items-center justify-center min-h-[80vh] px-4 text-center">
-        <div className="mb-8 text-gold animate-pulse">
+        <div className="mb-8 text-gold transition-transform duration-300 hover:scale-110 cursor-pointer">
           <FaInfinity size={72} />
         </div>
         <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 text-ink">
