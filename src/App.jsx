@@ -21,7 +21,7 @@ function App() {
         </p>
         <button
           onClick={() => setIsDark(!isDark)}
-          className="mt-10 px-8 py-3 bg-accent text-on-accent rounded-full hover:bg-opacity-90 transition-all shadow-lg font-medium cursor-pointer"
+          className="mt-10 px-8 py-3 bg-accent text-on-accent rounded-lg hover:bg-opacity-90 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 shadow-lg font-medium cursor-pointer"
         >
           {isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
         </button>
