@@ -4,9 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mirzakhani-inspire</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Mirzakhani Inspire</title>
+    <meta
+      name="description"
+      content="An educational tribute to Maryam Mirzakhani, the first woman to receive the Fields Medal."
+    />
+    <meta name="theme-color" content="#ddd7c9" />
+
+    <script>
+      (function () {
+        try {
+          let stored = localStorage.getItem("mirzakhani-theme");
+          let theme =
+            stored === "dark" || stored === "light"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme:dark)").matches
+                ? "dark"
+                : "light";
+          
+          if (theme === "dark") document.documentElement.classList.add("dark");
+          document.documentElement.style.colorScheme = theme;
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
