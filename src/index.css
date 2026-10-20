@@ -1,3 +1,4 @@
+/* src/index.css */
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -27,7 +28,7 @@
 }
 
 @theme inline {
-  --font-serif: "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
+  --font-serif: "Source Serif 4 Variable", Georgia, serif;
   --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
 
   --color-paper: var(--paper);
@@ -95,7 +96,7 @@
     background: var(--accent);
     color: var(--on-accent);
     font-weight: 600;
-    transition: top 0.2s ease;
+    transition: 0.2s ease;
   }
 
   .skip-link:focus {
@@ -105,15 +106,24 @@
   .reveal {
     opacity: 0;
     transform: translateY(14px);
-    transition:
-      opacity 0.7s ease,
-      transform 0.7s ease;
+    transition: 0.7s ease;
     transition-delay: var(--reveal-delay, 0ms);
   }
 
   .reveal[data-visible="true"] {
     opacity: 1;
     transform: none;
+  }
+
+  @keyframes disk-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .disk-spin {
+    animation: disk-spin 180s linear infinite;
+    transform-origin: center;
   }
 }
 
@@ -124,11 +134,14 @@
     transition: none;
   }
 
+  .disk-spin {
+    animation: none;
+  }
+
   *,
   *::before,
   *::after {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-    animation: none !important;
   }
 }
