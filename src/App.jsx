@@ -33,11 +33,9 @@ function App() {
           </p>
         </div>
 
-       <section className="max-w-3xl mx-auto mt-12">
-          
+        <section className="max-w-3xl mx-auto mt-12">
+          <div className="w-16 h-1 bg-gold mx-auto mb-8 rounded-full"></div>
         </section>
-
-        
       </main>
       <footer className="py-8 text-center border-t border-line">
         <button
