@@ -39,6 +39,9 @@ function App() {
             "The beauty of mathematics only shows itself to more patient
             followers."
           </blockquote>
+          <div className="text-muted font-sans text-lg tracking-wide">
+            Maryam Mirzakhani
+          </div>
         </section>
       </main>
       <footer className="py-8 text-center border-t border-line">
