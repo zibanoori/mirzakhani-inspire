@@ -35,6 +35,10 @@ function App() {
 
         <section className="max-w-3xl mx-auto mt-12">
           <div className="w-16 h-1 bg-gold mx-auto mb-8 rounded-full"></div>
+          <blockquote className="font-serif text-2xl md:text-3xl text-ink italic leading-relaxed mb-6">
+            "The beauty of mathematics only shows itself to more patient
+            followers."
+          </blockquote>
         </section>
       </main>
       <footer className="py-8 text-center border-t border-line">
