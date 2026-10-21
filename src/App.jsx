@@ -18,28 +18,30 @@ function App() {
   }, [isDark]);
 
   return (
-    <div className="min-h-screen bg-paper transition-colors duration-300">
-      <section className="flex flex-col items-center justify-center min-h-[80vh] px-4 text-center">
+    <div className="min-h-screen bg-paper transition-colors duration-300 flex flex-col">
+      <main className="flex-grow flex flex-col items-center justify-center px-4 text-center py-20">
         <div className="mb-6 text-gold transition-transform duration-300 cursor-pointer hover:scale-110">
           <FaInfinity size={72} />
         </div>
         <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 text-ink">
           Maryam Mirzakhani
         </h1>
-        <div className="flex items-center justify-center gap-2 text-muted mb-6">
+        <div className="flex items-center justify-center gap-2 text-muted mb-8">
           <FaMedal className="text-gold" />
           <p className="text-xl md:text-2xl font-sans leading-relaxed">
             First woman and first Iranian to win the Fields Medal
           </p>
         </div>
-
+        
+      </main>
+      <footer className="py-8 text-center border-t border-line">
         <button
           onClick={() => setIsDark(!isDark)}
-          className="mt-8 px-8 py-3 bg-accent text-on-accent rounded-lg hover:bg-opacity-90 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 shadow-lg font-medium cursor-pointer"
+          className="px-6 py-2 bg-accent text-on-accent rounded-lg hover:bg-opacity-90 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 shadow-md font-medium cursor-pointer text-sm"
         >
           {isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
         </button>
-      </section>
+      </footer>
     </div>
   );
 }
