@@ -32,6 +32,11 @@ function App() {
             First woman and first Iranian to win the Fields Medal
           </p>
         </div>
+
+       <section className="max-w-3xl mx-auto mt-12">
+          
+        </section>
+
         
       </main>
       <footer className="py-8 text-center border-t border-line">
