@@ -32,7 +32,9 @@ function App() {
             First woman and first Iranian to win the Fields Medal
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 mb-16"></div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 mb-16">
+          <div className="p-4 border bordr-line rounded-lg bg-surface"></div>
+        </div>
         <section className="max-w-3xl mx-auto">
           <div className="w-16 h-1 bg-gold mx-auto mb-8 rounded-full"></div>
           <blockquote className="font-serif text-2xl md:text-3xl text-ink italic leading-relaxed mb-6">
