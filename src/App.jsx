@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaMedal, FaInfinity } from "react-icons/fa6";
+import { FaMedal, FaInfinity, FaGraduationCap, FaAward } from "react-icons/fa6";
 import "./App.css";
 
 function App() {
@@ -19,7 +19,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-paper transition-colors duration-300 flex flex-col">
-      {/* Main Content */}
       <main className="flex-grow flex flex-col items-center justify-center px-4 text-center py-20">
         <div className="mb-6 text-gold transition-transform duration-300 cursor-pointer hover:scale-110">
           <FaInfinity size={72} />
@@ -33,19 +32,18 @@ function App() {
             First woman and first Iranian to win the Fields Medal
           </p>
         </div>
-
-        {/* Quote Section */}
-        <section className="max-w-3xl mx-auto mt-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 mb-16"></div>
+        <section className="max-w-3xl mx-auto">
           <div className="w-16 h-1 bg-gold mx-auto mb-8 rounded-full"></div>
           <blockquote className="font-serif text-2xl md:text-3xl text-ink italic leading-relaxed mb-6">
-            "The beauty of mathematics only shows itself to more patient followers."
+            "The beauty of mathematics only shows itself to more patient
+            followers."
           </blockquote>
           <div className="text-muted font-sans text-lg tracking-wide">
-           Maryam Mirzakhani
+            Maryam Mirzakhani
           </div>
         </section>
       </main>
-      {/* Footer with Theme Toggle */}
       <footer className="py-8 text-center border-t border-line">
         <button
           onClick={() => setIsDark(!isDark)}
@@ -54,7 +52,6 @@ function App() {
           {isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
         </button>
       </footer>
-
     </div>
   );
 }
