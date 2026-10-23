@@ -33,10 +33,15 @@ function App() {
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 mb-16">
-          <div className="p-4 border bordr-line rounded-lg bg-surface">
+          <div className="p-4 border border-line rounded-lg bg-surface">
             <FaGraduationCap className="text-accent mx-auto mb-2" size={24} />
             <h3 className="font-bold text-ink">Education</h3>
             <p className="text-sm text-muted">PhD from Harvard</p>
+          </div>
+          <div className="p-4 border border-line rounded-lg bg-surface">
+            <FaAward className="text-accent mx-auto mb-2" size={24} />
+            <h3 className="font-bold text-ink">Fields Medal</h3>
+            <p className="text-sm text-muted">Won in 2014</p>
           </div>
         </div>
         <section className="max-w-3xl mx-auto">
