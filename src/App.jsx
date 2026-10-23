@@ -43,6 +43,11 @@ function App() {
             <h3 className="font-bold text-ink">Fields Medal</h3>
             <p className="text-sm text-muted">Won in 2014</p>
           </div>
+          <div className="p-4 border border-line rounded-lg bg-surface col-span-2 md:col-span-1">
+            <FaInfinity className="text-accent mx-auto mb-2" size={24} />
+            <h3 className="font-bold text-ink">Legacy</h3>
+            <p className="text-sm text-muted">Inspiring future generations</p>
+          </div>
         </div>
         <section className="max-w-3xl mx-auto">
           <div className="w-16 h-1 bg-gold mx-auto mb-8 rounded-full"></div>
