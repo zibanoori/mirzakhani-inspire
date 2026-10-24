@@ -70,7 +70,9 @@ function App() {
           <h2 className="font-serif text-3xl md:text-4xl text-center text-ink mb-16">
             Life Journey
           </h2>
-          <div className="relative border-1-2 border-gold/30 ml-6 md:ml-10 space-y-12"></div>
+          <div className="relative border-1-2 border-gold/30 ml-6 md:ml-10 space-y-12">
+            <div className="relative pl-8 md:pl-12"></div>
+          </div>
         </section>
       </main>
       <footer className="py-8 text-center border-t border-line">
