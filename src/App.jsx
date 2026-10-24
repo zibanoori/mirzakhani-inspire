@@ -66,6 +66,7 @@ function App() {
             Maryam Mirzakhani
           </div>
         </section>
+        <section className="py-16 px-4 w-full max-w-3xl mx-auto"></section>
       </main>
       <footer className="py-8 text-center border-t border-line">
         <button
