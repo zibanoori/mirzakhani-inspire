@@ -1,5 +1,12 @@
 import { useState, useEffect } from "react";
-import { FaMedal, FaInfinity, FaGraduationCap, FaAward } from "react-icons/fa6";
+import {
+  FaMedal,
+  FaInfinity,
+  FaGraduationCap,
+  FaAward,
+  FaLocationDot,
+  FaBuildingColumns,
+} from "react-icons/fa6";
 import "./App.css";
 
 function App() {
@@ -49,7 +56,7 @@ function App() {
             <p className="text-sm text-muted">Inspiring future generations</p>
           </div>
         </div>
-        <section className="max-w-3xl mx-auto">
+        <section className="max-w-3xl mx-auto mb-20">
           <div className="w-16 h-1 bg-gold mx-auto mb-8 rounded-full"></div>
           <blockquote className="font-serif text-2xl md:text-3xl text-ink italic leading-relaxed mb-6">
             "The beauty of mathematics only shows itself to more patient
