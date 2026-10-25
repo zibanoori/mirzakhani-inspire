@@ -77,6 +77,9 @@ function App() {
                   <div className="flex flex-wrap items-center gap-2 mb-2">
                     <FaLocationDot className="text-accent" />
                     <h3 className="font-bold text-lg text-ink">Tehran, Iran</h3>
+                    <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">
+                      1977
+                    </span>
                   </div>
                 </div>
               </div>
