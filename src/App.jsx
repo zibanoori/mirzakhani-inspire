@@ -81,6 +81,10 @@ function App() {
                       1977
                     </span>
                   </div>
+                  <p className="text-muted text-sm leading-relaxed">
+                    Born on May 12th into a family that valued education and
+                    curiosity.
+                  </p>
                 </div>
               </div>
             </div>
