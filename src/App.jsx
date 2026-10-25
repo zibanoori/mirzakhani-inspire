@@ -73,7 +73,9 @@ function App() {
           <div className="relative border-1-2 border-gold/30 ml-6 md:ml-10 space-y-12">
             <div className="relative pl-8 md:pl-12">
               <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-gold border-4 boredr-paper shadow-md">
-                <div className="p-5 border border-line rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow"></div>
+                <div className="p-5 border border-line rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex flex-wrap items-center gap-2 mb-2"></div>
+                </div>
               </div>
             </div>
           </div>
