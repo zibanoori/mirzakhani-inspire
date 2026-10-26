@@ -124,3 +124,49 @@ export const timeline = [
     icon: FaInfinity,
   },
 ];
+
+export const achievements = [
+  {
+    icon: FaMedal,
+    year: "2014",
+    title: "Fields Medal",
+    text: "Awarded for her contributions to the dynamics and geometry of Riemann surfaces and their moduli spaces.",
+  },
+  {
+    icon: FaLink,
+    year: "2007",
+    title: "Witten’s Conjecture",
+    text: "Gave a new proof linking moduli space volumes to elementary counting problems for geodesics.",
+  },
+  {
+    icon: FaRepeat,
+    year: "2013-15",
+    title: "Rigidity on Moduli Space",
+    text: "Proved that closures of complex geodesics in moduli space are surprisingly regular rather than fractal.",
+  },
+  {
+    icon: FaStar,
+    year: "1994-95",
+    title: "Olympiad Gold",
+    text: "Gold medals at the IMO with a perfect score of 42/42 in 1995.",
+  },
+];
+
+export const references = [
+  {
+    title: "Stanford News",
+    url: "https://news.stanford.edu/2017/07/15/maryam-mirzakhani-stanford-mathematician-and-fields-medal-winner-dies/",
+  },
+  {
+    title: "MacTutor Biography",
+    url: "https://mathshistory.st-andrews.ac.uk/Biographies/Mirzakhani/",
+  },
+  {
+    title: "Quanta Magazine",
+    url: "https://www.quantamagazine.org/maryam-mirzakhani-is-first-woman-fields-medalist-20140812/",
+  },
+  {
+    title: "IMU Fields Medal Press Release",
+    url: "https://www.mathunion.org/fileadmin/IMU/Prizes/Fields/2014/news_release_mirzakhani.pdf",
+  },
+];
