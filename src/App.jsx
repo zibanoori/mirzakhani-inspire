@@ -88,7 +88,9 @@ function App() {
               </div>
             </div>
 
-            <div className="relative pl-8 md:pl-12 "></div>
+            <div className="relative pl-8 md:pl-12 ">
+              <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-gold border-4 border-paper shadow-md"></div>
+            </div>
           </div>
         </section>
       </main>
