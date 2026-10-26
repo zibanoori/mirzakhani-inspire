@@ -88,20 +88,23 @@ function App() {
               </div>
             </div>
 
-            <div className="relative pl-8 md:pl-12 ">
-              <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-gold border-4 border-paper shadow-md">
-                <FaBuildingColumns className="text-accent" />
-                <h3 className="font-bold text-lg text-ink">
-                  Harvard University
-                </h3>
-                <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">
-                  2004
-                </span>
+            <div className="relative pl-8 md:pl-12">
+              <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-gold border-4 border-paper shadow-md"></div>
+              <div className="p-5 border border-line rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <FaBuildingColumns className="text-accent" />
+                  <h3 className="font-bold text-lg text-ink">
+                    Harvard University
+                  </h3>
+                  <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">
+                    2004
+                  </span>
+                </div>
+                <p className="text-muted text-sm leading-relaxed">
+                  Earned her PhD under the supervision of Fields Medalist Curtis
+                  McMullen.
+                </p>
               </div>
-              <p className="text-muted text-sm leading-relaxed">
-                Earned her PhD under the supervision of Fields Medalist Curtis
-                McMullen.
-              </p>
             </div>
           </div>
         </section>
