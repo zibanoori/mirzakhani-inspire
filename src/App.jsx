@@ -94,7 +94,9 @@ function App() {
                 <h3 className="font-bold text-lg text-ink">
                   Harvard University
                 </h3>
+                <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">2004</span>
               </div>
+              
             </div>
           </div>
         </section>
