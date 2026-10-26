@@ -91,6 +91,9 @@ function App() {
             <div className="relative pl-8 md:pl-12 ">
               <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-gold border-4 border-paper shadow-md">
                 <FaBuildingColumns className="text-accent" />
+                <h3 className="font-bold text-lg text-ink">
+                  Harvard University
+                </h3>
               </div>
             </div>
           </div>
