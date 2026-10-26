@@ -108,11 +108,11 @@ function App() {
             </div>
 
             <div className="relative pl-8 md:pl-12">
-               <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-gold border-4 border-paper shadow-md"></div>
+              <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-gold border-4 border-paper shadow-md"></div>
               <div className="p-5 border border-line rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex flex-wrap items-center gap-2 mb-2">
-
-              </div>
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <FaMedal className="text-accent" />
+                </div>
               </div>
             </div>
           </div>
