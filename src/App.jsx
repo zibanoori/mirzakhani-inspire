@@ -106,6 +106,10 @@ function App() {
                 </p>
               </div>
             </div>
+
+            <div className="relative pl-8 md:pl-12">
+              
+            </div>
           </div>
         </section>
       </main>
