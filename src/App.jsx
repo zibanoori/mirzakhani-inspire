@@ -94,9 +94,14 @@ function App() {
                 <h3 className="font-bold text-lg text-ink">
                   Harvard University
                 </h3>
-                <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">2004</span>
+                <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">
+                  2004
+                </span>
               </div>
-              
+              <p className="text-muted text-sm leading-relaxed">
+                Earned her PhD under the supervision of Fields Medalist Curtis
+                McMullen.
+              </p>
             </div>
           </div>
         </section>
