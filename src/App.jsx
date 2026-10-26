@@ -114,6 +114,7 @@ function App() {
                   <FaMedal className="text-accent" />
                    <h3 className="font-bold text-lg text-ink">Fields Medal</h3>
                    <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">2014</span>
+                    <p className="text-muted text-sm leading-relaxed">Honored as the first woman and first Iranian to receive the Nobel Prize of Mathematics.</p>
                 </div>
               </div>
             </div>
