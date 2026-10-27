@@ -1,3 +1,4 @@
+import { meta } from "eslint-plugin-react-hooks";
 import { useState, useEffect, useCallback } from "react";
 const STORAGE_KEY = "zn-theme";
 
@@ -26,5 +27,13 @@ export function useTheme() {
     const root = document.documentElement;
     root.classList.toggle("dark", theme === "dark");
     root.style.colorScheme = theme;
-  });
+
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute(
+        "content",
+        theme === "dark" ? "#0e121a" : "#f9f7f2",
+      );
+    }
+  }, [theme]);
 }
