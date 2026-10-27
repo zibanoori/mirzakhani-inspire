@@ -36,4 +36,8 @@ export function useTheme() {
       );
     }
   }, [theme]);
+
+  const toggleTheme = useCallback(() => {
+    const next = theme === "dark" ? "light" : "dark";
+  });
 }
