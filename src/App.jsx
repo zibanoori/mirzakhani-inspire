@@ -71,14 +71,13 @@ function App() {
 
       <footer className="py-8 text-center border-t border-line">
         <button
-          onClick={() => setIsDark(!isDark)}
+          onClick={toggleTheme}
           className="px-6 py-2 bg-accent text-on-accent rounded-lg hover:bg-opacity-90 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 shadow-md font-medium cursor-pointer text-sm"
         >
-          {isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          {theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
         </button>
       </footer>
     </div>
   );
 }
-
 export default App;
