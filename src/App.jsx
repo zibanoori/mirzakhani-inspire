@@ -47,78 +47,24 @@ function App() {
           <h2 className="font-serif text-3xl md:text-4xl text-center text-ink mb-16">
             Life Journey
           </h2>
-          <div className="relative border-l-2 border-gold/30 ml-6 md:ml-10 space-y-12">
-            <div className="relative pl-8 md:pl-12">
-              <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-gold border-4 border-paper shadow-md"></div>
-              <div className="p-5 border border-line rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <FaLocationDot className="text-accent" />
-                  <h3 className="font-bold text-lg text-ink">Tehran, Iran</h3>
-                  <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">
-                    1977
-                  </span>
+          <div className="relative border-l-2 border-gold ml-6 md:ml-10 space-y-12">
+            {timeline.map((item, index) => (
+              <div key={index} className="relative pl-8 md:pl-12">
+                <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-gold border-4 border-paper shadow-md"></div>
+                <div className="p-5 border border-line rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <item.icon className="text-accent" />
+                    <h3 className="font-bold text-lg text-ink">{item.title}</h3>
+                    <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">
+                      {item.year}
+                    </span>
+                  </div>
+                  <p className="text-muted text-sm leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
-                <p className="text-muted text-sm leading-relaxed">
-                  Born on May 12th into a family that valued education and
-                  curiosity.
-                </p>
               </div>
-            </div>
-
-            <div className="relative pl-8 md:pl-12">
-              <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-gold border-4 border-paper shadow-md"></div>
-              <div className="p-5 border border-line rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <FaAward className="text-accent" />
-                  <h3 className="font-bold text-lg text-ink">
-                    IMO Gold Medals
-                  </h3>
-                  <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">
-                    1994 & 1995
-                  </span>
-                </div>
-                <p className="text-muted text-sm leading-relaxed">
-                  Became the first Iranian student to achieve a perfect score
-                  and win gold at the International Mathematical Olympiad.
-                </p>
-              </div>
-            </div>
-
-            <div className="relative pl-8 md:pl-12">
-              <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-gold border-4 border-paper shadow-md"></div>
-              <div className="p-5 border border-line rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <FaBuildingColumns className="text-accent" />
-                  <h3 className="font-bold text-lg text-ink">
-                    Harvard University
-                  </h3>
-                  <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">
-                    2004
-                  </span>
-                </div>
-                <p className="text-muted text-sm leading-relaxed">
-                  Earned her PhD under the supervision of Fields Medalist Curtis
-                  McMullen.
-                </p>
-              </div>
-            </div>
-
-            <div className="relative pl-8 md:pl-12">
-              <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-gold border-4 border-paper shadow-md"></div>
-              <div className="p-5 border border-line rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <FaMedal className="text-accent" />
-                  <h3 className="font-bold text-lg text-ink">Fields Medal</h3>
-                  <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">
-                    2014
-                  </span>
-                </div>
-                <p className="text-muted text-sm leading-relaxed">
-                  Honored as the first woman and first Iranian to receive the
-                  Nobel Prize of Mathematics.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
       </main>
