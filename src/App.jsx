@@ -16,9 +16,8 @@ function App() {
           {person.name}
         </h1>
         <div className="flex items-center justify-center gap-2 text-muted mb-8">
-          <FaMedal className="text-gold" />
           <p className="text-xl md:text-2xl font-sans leading-relaxed">
-            First woman and first Iranian to win the Fields Medal
+            {hero.lead}
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 mb-16">
