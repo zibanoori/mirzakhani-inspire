@@ -11,8 +11,9 @@ function App() {
         <div className="mb-6 text-gold transition-transform duration-300 cursor-pointer hover:scale-110">
           <FaInfinity size={72} />
         </div>
+
         <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 text-ink">
-          Maryam Mirzakhani
+          {person.name}
         </h1>
         <div className="flex items-center justify-center gap-2 text-muted mb-8">
           <FaMedal className="text-gold" />
