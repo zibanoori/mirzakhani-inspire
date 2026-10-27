@@ -20,22 +20,18 @@ function App() {
             {hero.lead}
           </p>
         </div>
+
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 mb-16">
-          <div className="p-4 border border-line rounded-lg bg-surface">
-            <FaGraduationCap className="text-accent mx-auto mb-2" size={24} />
-            <h3 className="font-bold text-ink">Education</h3>
-            <p className="text-sm text-muted">PhD from Harvard</p>
-          </div>
-          <div className="p-4 border border-line rounded-lg bg-surface">
-            <FaAward className="text-accent mx-auto mb-2" size={24} />
-            <h3 className="font-bold text-ink">Fields Medal</h3>
-            <p className="text-sm text-muted">Won in 2014</p>
-          </div>
-          <div className="p-4 border border-line rounded-lg bg-surface col-span-2 md:col-span-1">
-            <FaInfinity className="text-accent mx-auto mb-2" size={24} />
-            <h3 className="font-bold text-ink">Legacy</h3>
-            <p className="text-sm text-muted">Inspiring future generations</p>
-          </div>
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="p-4 border border-line rounded-lg bg-surface"
+            >
+              <stat.icon className="text-accent mx-auto mb-2" size={24} />
+              <h3 className="font-bold text-ink">{stat.title}</h3>
+              <p className="text-sm text-muted">{stat.value}</p>
+            </div>
+          ))}
         </div>
         <section className="max-w-3xl mx-auto mb-20">
           <div className="w-16 h-1 bg-gold mx-auto mb-8 rounded-full"></div>
