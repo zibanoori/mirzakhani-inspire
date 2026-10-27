@@ -18,3 +18,7 @@ function getInitialTheme() {
     ? "dark"
     : "light";
 }
+
+export function useTheme() {
+  const [theme, setTheme] = usestate(getInitialTheme);
+}
