@@ -3,6 +3,9 @@ const STORAGE_KEY = "zn-theme";
 
 function readStoredTheme() {
   try {
-    
+    const stored = localStorage.getItem(STORAGE_KEY);
+    return stored === "dark" || stored === "light" ? stored : null;
+  } catch {
+    return null;
   }
 }
