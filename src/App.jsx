@@ -2,30 +2,8 @@ import { useTheme } from "./useTheme";
 import { hero, states, quote, timeline } from "./data/content";
 import "./App.css";
 
-import {
-  FaMedal,
-  FaInfinity,
-  FaGraduationCap,
-  FaAward,
-  FaLocationDot,
-  FaBuildingColumns,
-} from "react-icons/fa6";
-import "./App.css";
-
 function App() {
-  const [isDark, setIsDark] = useState(() => {
-    return localStorage.getItem("mirzakhani-theme") === "dark";
-  });
-
-  useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("mirzakhani-theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("mirzakhani-theme", "light");
-    }
-  }, [isDark]);
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <div className="min-h-screen bg-paper transition-colors duration-300 flex flex-col">
