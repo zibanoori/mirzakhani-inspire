@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useTheme } from "./useTheme";
+
 import {
   FaMedal,
   FaInfinity,
@@ -66,7 +67,7 @@ function App() {
             Maryam Mirzakhani
           </div>
         </section>
-        
+
         <section className="py-16 px-4 w-full max-w-3xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl text-center text-ink mb-16">
             Life Journey
@@ -146,7 +147,6 @@ function App() {
           </div>
         </section>
       </main>
-
 
       <footer className="py-8 text-center border-t border-line">
         <button
