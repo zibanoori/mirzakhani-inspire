@@ -1,4 +1,6 @@
 import { useTheme } from "./useTheme";
+import { hero, states, quote, timeline } from "./data/content";
+import "./App.css";
 
 import {
   FaMedal,
