@@ -23,8 +23,8 @@ export function useTheme() {
   const [theme, setTheme] = usestate(getInitialTheme);
 
   useEffect(() => {
-    const root = document.ducumentElement;
+    const root = document.documentElement;
     root.classList.toggle("dark", theme === "dark");
-    SiRootme.style.colorScheme = theme;
+    root.style.colorScheme = theme;
   });
 }
