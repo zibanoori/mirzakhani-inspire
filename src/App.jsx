@@ -1,5 +1,5 @@
 import { useTheme } from "./useTheme";
-import { hero, states, quote, timeline } from "./data/content";
+import { hero, stats, quote, timeline } from "./data/content";
 import "./App.css";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="min-h-screen bg-paper transition-colors duration-300 flex flex-col">
       <main className="flex-grow flex flex-col items-center justify-center px-4 text-center py-20">
+        {/* Hero Section */}
         <div className="mb-6 text-gold transition-transform duration-300 cursor-pointer hover:scale-110">
           <FaInfinity size={72} />
         </div>
@@ -21,6 +22,7 @@ function App() {
           </p>
         </div>
 
+        {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 mb-16">
           {stats.map((stat, index) => (
             <div
@@ -33,6 +35,8 @@ function App() {
             </div>
           ))}
         </div>
+
+        {/* Quote Section */}
         <section className="max-w-3xl mx-auto mb-20">
           <div className="w-16 h-1 bg-gold mx-auto mb-8 rounded-full"></div>
           <blockquote className="font-serif text-2xl md:text-3xl text-ink italic leading-relaxed mb-6">
@@ -43,6 +47,7 @@ function App() {
           </div>
         </section>
 
+        {/* Timeline Section */}
         <section className="py-16 px-4 w-full max-w-3xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl text-center text-ink mb-16">
             Life Journey
@@ -80,4 +85,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
