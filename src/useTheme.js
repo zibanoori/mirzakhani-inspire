@@ -1,5 +1,5 @@
-import { meta } from "eslint-plugin-react-hooks";
 import { useState, useEffect, useCallback } from "react";
+
 const STORAGE_KEY = "zn-theme";
 
 function readStoredTheme() {
@@ -21,7 +21,7 @@ function getInitialTheme() {
 }
 
 export function useTheme() {
-  const [theme, setTheme] = usestate(getInitialTheme);
+  const [theme, setTheme] = useState(getInitialTheme);
 
   useEffect(() => {
     const root = document.documentElement;
