@@ -170,3 +170,29 @@ export const references = [
     url: "https://www.mathunion.org/fileadmin/IMU/Prizes/Fields/2014/news_release_mirzakhani.pdf",
   },
 ];
+
+export const research = {
+  title: "Research & Legacy",
+  intro:
+    "Maryam Mirzakhani explored the geometry of curved surfaces and the spaces of their possible shapes. Her work connected geometry, topology, and dynamical systems.",
+  topics: [
+    {
+      id: "geodesics",
+      title: "Geodesics on Curved Surfaces",
+      text: "She studied simple closed geodesics: paths that return to their starting point without crossing themselves. Her work revealed how their numbers grow as their lengths increase.",
+      tag: "Hyperbolic Geometry",
+    },
+    {
+      id: "moduli",
+      title: "The Space of Shapes",
+      text: "She studied moduli spaces, which bring together different geometric shapes of surfaces. She developed important formulas for calculating volumes of these spaces.",
+      tag: "Moduli Spaces",
+    },
+    {
+      id: "dynamics",
+      title: "Dynamics and Patterns",
+      text: "Together with collaborators, she studied the behavior of mathematical systems and showed that seemingly complicated geometric patterns can have deep underlying structure.",
+      tag: "Dynamical Systems",
+    },
+  ],
+};
