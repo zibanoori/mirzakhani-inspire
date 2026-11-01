@@ -1,7 +1,7 @@
 import { useTheme } from "./useTheme";
 import { person, hero, stats, quote, timeline } from "./data/content";
 import { FaInfinity } from "react-icons/fa6";
-
+import Section from "./components/Section";
 import "./App.css";
 
 function App() {
@@ -39,16 +39,19 @@ function App() {
         </div>
 
         {/* Quote Section */}
-        <section className="max-w-3xl mx-auto mb-20">
-          <div className="w-16 h-1 bg-gold mx-auto mb-8 rounded-full"></div>
+        <Section
+          id="quote"
+          eyebrow="Philosophy"
+          title="The Beauty of Mathematics"
+          intro="A glimpse into her patient and curious mind."
+        >
           <blockquote className="font-serif text-2xl md:text-3xl text-ink italic leading-relaxed mb-6">
             "{quote.text}"
           </blockquote>
           <div className="text-muted font-sans text-lg tracking-wide">
-            {quote.author}
+            — {quote.author}
           </div>
-        </section>
-
+        </Section>
         {/* Timeline Section */}
         <section className="py-16 px-4 w-full max-w-3xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl text-center text-ink mb-16">
