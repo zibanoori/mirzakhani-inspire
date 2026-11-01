@@ -3,7 +3,6 @@ import { person, hero, stats, timeline, references } from "./data/content";
 import { FaInfinity } from "react-icons/fa6";
 import Reveal from "./components/Reveal";
 import Section from "./components/Section";
-import ThemeToggle from "./components/ThemeToggle";
 import Navbar from "./components/Navbar";
 import "./App.css";
 
