@@ -25,7 +25,7 @@ export const portrait = {
 export const hero = {
   eyebrow: "In memoriam · 1977 - 2017",
   role: "Iranian mathematician · Professor at Stanford University",
-  lead: "She devoted her career to the geometry of curved surfaces, and to the vast spaces of all the shapes those surfaces can take. In 2014 she became the first woman to receive the Fields Medal.",
+  lead: "A brilliant mathematician who explored the geometry of curved surfaces. In 2014, she became the first woman to win the Fields Medal.",
   tribute:
     "This page is a small, independent tribute to her curiosity, her patience and her quiet daring.",
 };
