@@ -1,7 +1,7 @@
 import { useTheme } from "./useTheme";
-import { person, hero, stats, quote, timeline } from "./data/content";
+import { person, hero, stats, timeline } from "./data/content";
 import { FaInfinity } from "react-icons/fa6";
-import Reveal from "./Reveal";
+import Reveal from "./components/Reveal";
 import Section from "./components/Section";
 import "./App.css";
 
@@ -39,20 +39,6 @@ function App() {
           ))}
         </div>
 
-        {/* Quote Section */}
-        <Section
-          id="quote"
-          eyebrow="Philosophy"
-          title="The Beauty of Mathematics"
-          intro="A glimpse into her patient and curious mind."
-        >
-          <blockquote className="font-serif text-2xl md:text-3xl text-ink italic leading-relaxed mb-6">
-            "{quote.text}"
-          </blockquote>
-          <div className="text-muted font-sans text-lg tracking-wide">
-            — {quote.author}
-          </div>
-        </Section>
         {/* Timeline Section */}
         <Section
           id="timeline"
