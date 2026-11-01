@@ -42,7 +42,9 @@ export function useTheme() {
     setTheme(next);
     try {
       localStorage.setItem(STORAGE_KEY, next);
-    } catch {}
+    } catch {
+      // Ignore storage errors (e.g., if quota is exceeded)
+    }
   }, [theme]);
 
   return { theme, toggleTheme };

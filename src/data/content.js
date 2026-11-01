@@ -6,7 +6,6 @@ import {
   FaLocationDot,
   FaBuildingColumns,
   FaStar,
-  FaBookmark,
   FaLink,
   FaRepeat,
 } from "react-icons/fa6";
