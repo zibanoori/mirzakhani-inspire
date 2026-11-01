@@ -3,6 +3,8 @@ import { person, hero, stats, timeline, references } from "./data/content";
 import { FaInfinity } from "react-icons/fa6";
 import Reveal from "./components/Reveal";
 import Section from "./components/Section";
+import ThemeToggle from "./components/ThemeToggle";
+import Navbar from "./components/Navbar";
 import "./App.css";
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-paper transition-colors duration-300 flex flex-col">
+       <Navbar theme={theme} onToggle={toggleTheme} />
       <main className="flex-grow flex flex-col items-center justify-center px-4 text-center py-20">
         {/* Hero Section */}
         <div className="mb-6 text-gold transition-transform duration-300 cursor-pointer hover:scale-110">
@@ -91,13 +94,8 @@ function App() {
           ))}
         </div>
       </section>
-      <footer className="py-8 text-center border-t border-line">
-        <button
-          onClick={toggleTheme}
-          className="px-6 py-2 bg-accent text-on-accent rounded-lg hover:bg-opacity-90 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 shadow-md font-medium cursor-pointer text-sm"
-        >
-          {theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
-        </button>
+      <footer className="py-8 text-center border-t border-line flex justify-center">
+        <ThemeToggle theme={theme} onToggle={toggleTheme} />
       </footer>
     </div>
   );
