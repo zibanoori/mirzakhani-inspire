@@ -1,6 +1,7 @@
 import { useTheme } from "./useTheme";
 import { person, hero, stats, quote, timeline } from "./data/content";
 import { FaInfinity } from "react-icons/fa6";
+
 import "./App.css";
 
 function App() {
