@@ -1,5 +1,5 @@
 import { useTheme } from "./useTheme";
-import { person, hero, stats, timeline } from "./data/content";
+import { person, hero, stats, timeline, references } from "./data/content";
 import { FaInfinity } from "react-icons/fa6";
 import Reveal from "./components/Reveal";
 import Section from "./components/Section";
@@ -72,7 +72,25 @@ function App() {
           </div>
         </Section>
       </main>
-
+      {/* References Section */}
+      <section className="py-16 px-4 w-full max-w-3xl mx-auto text-center">
+        <h2 className="font-serif text-2xl text-ink mb-8">
+          References & Further Reading
+        </h2>
+        <div className="flex flex-wrap justify-center gap-4 text-sm">
+          {references.map((ref, index) => (
+            <a
+              key={index}
+              href={ref.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:underline transition-colors"
+            >
+              {ref.title} ↗
+            </a>
+          ))}
+        </div>
+      </section>
       <footer className="py-8 text-center border-t border-line">
         <button
           onClick={toggleTheme}
