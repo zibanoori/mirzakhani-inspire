@@ -13,6 +13,15 @@ export default function Portrait() {
             loaded ? "opacity-0" : "opacity-100"
           }`}
         ></div>
+
+        <img
+          src={portrait.src}
+          alt={portrait.alt}
+          onLoad={() => setLoaded(true)}
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+            loaded ? "opacity-100" : "opacity-0"
+          }`}
+        />
       </div>
     </figure>
   );
