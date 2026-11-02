@@ -16,3 +16,39 @@ function buildPaths(corners, steps) {
   });
   return paths;
 }
+
+const LAYER_OPACITY = [0.9, 0.55, 0.38, 0.26];
+
+export default function PoincareDisk({ className = "", spin = false }) {
+  const paths = useMemo(() => buildPaths(14, [1, 2, 3, 4]), []);
+
+  return (
+    <svg
+      viewBox="-1.04 -1.04 2.08 2.08"
+      aria-hidden="true"
+      focusable="false"
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+    >
+      <circle
+        r="1"
+        strokeWidth="1.4"
+        vectorEffect="non-scaling-stroke"
+        opacity="0.8"
+      />
+      <g className={spin ? "disk-spin" : undefined}>
+        {paths.map((p, index) => (
+          <path
+            key={index}
+            d={p.d}
+            strokeWidth="1"
+            vectorEffect="non-scaling-stroke"
+            opacity={LAYER_OPACITY[p.layer]}
+          />
+        ))}
+      </g>
+    </svg>
+  );
+}
