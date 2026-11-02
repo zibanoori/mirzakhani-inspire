@@ -1,6 +1,5 @@
 import { useTheme } from "./useTheme";
 import { person, hero, stats, timeline, references } from "./data/content";
-import { FaInfinity } from "react-icons/fa6";
 import Reveal from "./components/Reveal";
 import Section from "./components/Section";
 import Navbar from "./components/Navbar";
@@ -13,20 +12,22 @@ function App() {
   return (
     <div className="min-h-screen bg-paper transition-colors duration-300 flex flex-col">
       <Navbar theme={theme} onToggle={toggleTheme} />
-      <main className="flex-grow flex flex-col items-center justify-center px-4 text-center py-20">
-        {/* Hero Section */}
-        <div className="mb-6 text-gold transition-transform duration-300 cursor-pointer hover:scale-110">
-          <FaInfinity size={72} />
+
+      <main className="flex-grow flex flex-col items-center px-4 text-center py-20 sm:py-28">
+        <div className="mb-16 w-full max-w-sm mx-auto">
+          <Portrait />
         </div>
 
-        <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 text-ink">
-          {person.name}
-        </h1>
-        <div className="flex items-center justify-center gap-2 text-muted mb-8">
-          <p className="text-xl md:text-2xl font-sans leading-relaxed">
+        {/* Hero Section */}
+        <Reveal delay={100}>
+          <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 text-ink">
+            {person.name}
+          </h1>
+
+          <p className="text-xl md:text-2xl font-sans leading-relaxed text-muted max-w-2xl mx-auto">
             {hero.lead}
           </p>
-        </div>
+        </Reveal>
 
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 mb-16">
@@ -75,6 +76,7 @@ function App() {
           </div>
         </Section>
       </main>
+
       {/* References Section */}
       <section className="py-16 px-4 w-full max-w-3xl mx-auto text-center">
         <h2 className="font-serif text-2xl text-ink mb-8">
@@ -94,6 +96,7 @@ function App() {
           ))}
         </div>
       </section>
+
       <footer className="py-8 text-center border-t border-line">
         <p className="text-xs text-muted">
           © 2026 Mirzakhani Inspire · A tribute to Maryam Mirzakhani
