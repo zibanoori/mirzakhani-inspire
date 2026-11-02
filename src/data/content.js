@@ -18,7 +18,7 @@ export const person = {
 };
 
 export const portrait = {
-  src: "/images/maryam-mirzakhani.jpg",
+  src: "https://news.stanford.edu/wp-content/uploads/2017/07/maryam-mirzakhani-1.jpg",
   alt: "Portrait of Maryam Mirzakhani",
 };
 
@@ -75,6 +75,7 @@ export const about = {
     { label: "Doctoral advisor", value: "Curtis T. McMullen" },
   ],
 };
+
 export const timeline = [
   {
     year: "1977",
