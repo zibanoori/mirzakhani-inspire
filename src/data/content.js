@@ -18,10 +18,9 @@ export const person = {
 };
 
 export const portrait = {
-  src: "https://news.stanford.edu/wp-content/uploads/2017/07/maryam-mirzakhani-1.jpg",
+  src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Maryam_Mirzakhani_2014.jpg/800px-Maryam_Mirzakhani_2014.jpg",
   alt: "Portrait of Maryam Mirzakhani",
 };
-
 export const hero = {
   eyebrow: "In memoriam · 1977 - 2017",
   role: "Iranian mathematician · Professor at Stanford University",
