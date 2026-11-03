@@ -12,7 +12,11 @@ export default function ThemeToggle({ theme, onToggle }) {
       title={label}
       className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition-colors"
     >
-      {isDark ? <FiSun aria-hidden="true" size={18} /> : <FiMoon aria-hidden="true" size={18} />}
+      {isDark ? (
+        <FiSun aria-hidden="true" size={18} />
+      ) : (
+        <FiMoon aria-hidden="true" size={18} />
+      )}
     </button>
   );
 }
