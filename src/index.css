@@ -1,5 +1,5 @@
 /* src/index.css */
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -28,8 +28,8 @@
 }
 
 @theme inline {
-  --font-serif: "Source Serif 4 Variable", Georgia, serif;
-  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Source Serif 4 Variable', Georgia, serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
 
   --color-paper: var(--paper);
   --color-surface: var(--surface);
@@ -110,7 +110,7 @@
     transition-delay: var(--reveal-delay, 0ms);
   }
 
-  .reveal[data-visible="true"] {
+  .reveal[data-visible='true'] {
     opacity: 1;
     transform: none;
   }

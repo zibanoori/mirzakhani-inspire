@@ -1,4 +1,4 @@
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from './ThemeToggle'
 
 export default function Navbar({ theme, onToggle }) {
   return (
@@ -6,5 +6,5 @@ export default function Navbar({ theme, onToggle }) {
       <div className="font-serif font-bold text-xl text-ink">Maryam Mirzakhani</div>
       <ThemeToggle theme={theme} onToggle={onToggle} />
     </nav>
-  );
+  )
 }

@@ -1,51 +1,46 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from 'react'
 
-const STORAGE_KEY = "zn-theme";
+const STORAGE_KEY = 'zn-theme'
 
 function readStoredTheme() {
   try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    return stored === "dark" || stored === "light" ? stored : null;
+    const stored = localStorage.getItem(STORAGE_KEY)
+    return stored === 'dark' || stored === 'light' ? stored : null
   } catch {
-    return null;
+    return null
   }
 }
 
 function getInitialTheme() {
-  const stored = readStoredTheme();
-  if (stored) return stored;
+  const stored = readStoredTheme()
+  if (stored) return stored
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 }
 
 export function useTheme() {
-  const [theme, setTheme] = useState(getInitialTheme);
+  const [theme, setTheme] = useState(getInitialTheme)
 
   useEffect(() => {
-    const root = document.documentElement;
-    root.classList.toggle("dark", theme === "dark");
-    root.style.colorScheme = theme;
+    const root = document.documentElement
+    root.classList.toggle('dark', theme === 'dark')
+    root.style.colorScheme = theme
 
-    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]')
     if (metaThemeColor) {
-      metaThemeColor.setAttribute(
-        "content",
-        theme === "dark" ? "#0e121a" : "#f9f7f2",
-      );
+      metaThemeColor.setAttribute('content', theme === 'dark' ? '#0e121a' : '#f9f7f2')
     }
-  }, [theme]);
+  }, [theme])
 
   const toggleTheme = useCallback(() => {
-    const next = theme === "dark" ? "light" : "dark";
-    setTheme(next);
+    const next = theme === 'dark' ? 'light' : 'dark'
+    setTheme(next)
     try {
-      localStorage.setItem(STORAGE_KEY, next);
+      localStorage.setItem(STORAGE_KEY, next)
     } catch {
       // Ignore storage errors (e.g., if quota is exceeded)
     }
-  }, [theme]);
+  }, [theme])
 
-  return { theme, toggleTheme };
+  return { theme, toggleTheme }
 }

@@ -1,26 +1,23 @@
-import { useState } from "react";
-import { portrait } from "../data/content";
-import PoincareDisk from "./PoincareDisk";
+import { useState } from 'react'
+import { portrait } from '../data/content'
+import PoincareDisk from './PoincareDisk'
 
 export default function Portrait() {
-  const [loaded, setLoaded] = useState(false);
-  const [failed, setFailed] = useState(false);
-  const hasCredit = Boolean(portrait.credit);
+  const [loaded, setLoaded] = useState(false)
+  const [failed, setFailed] = useState(false)
+  const hasCredit = Boolean(portrait.credit)
 
   return (
     <figure className="relative mx-auto w-full max-w-sm">
       {/* Large animated logo behind the frame */}
-      <PoincareDisk
-        spin
-        className="absolute -inset-20 z-0 w-[250%] text-accent/40"
-      />
+      <PoincareDisk spin className="absolute -inset-20 z-0 w-[250%] text-accent/40" />
 
       {/* Portrait frame */}
       <div className="relative z-10 aspect-[4/5] overflow-hidden rounded-3xl border border-line bg-surface shadow-[0_24px_60px_-30px_rgba(0,0,0,0.45)]">
         {/* Logo inside the frame */}
         <div
           className={`absolute inset-0 flex flex-col items-center justify-center gap-4 bg-accent-soft p-8 text-center text-accent transition-opacity duration-500 ${
-            loaded ? "opacity-0" : "opacity-100"
+            loaded ? 'opacity-0' : 'opacity-100'
           }`}
         >
           <PoincareDisk className="w-3/5" />
@@ -35,7 +32,7 @@ export default function Portrait() {
             onLoad={() => setLoaded(true)}
             onError={() => setFailed(true)}
             className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
-              loaded ? "opacity-100" : "opacity-0"
+              loaded ? 'opacity-100' : 'opacity-0'
             }`}
           />
         )}
@@ -61,7 +58,7 @@ export default function Portrait() {
 
               {portrait.license && (
                 <>
-                  {" · "}
+                  {' · '}
                   {portrait.licenseUrl ? (
                     <a
                       href={portrait.licenseUrl}
@@ -78,12 +75,12 @@ export default function Portrait() {
               )}
             </>
           ) : (
-            "Attribution missing: fill in `portrait` in src/data/content.js."
+            'Attribution missing: fill in `portrait` in src/data/content.js.'
           )
         ) : (
-          "A licensed portrait will appear here once the image file is added."
+          'A licensed portrait will appear here once the image file is added.'
         )}
       </figcaption>
     </figure>
-  );
+  )
 }

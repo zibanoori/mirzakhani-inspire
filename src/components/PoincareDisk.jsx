@@ -1,35 +1,35 @@
-import { useMemo } from "react";
+import { useMemo } from 'react'
 
 function geodesicPath(a, b) {
-  const r = Math.tan((b - a) / 2);
+  const r = Math.tan((b - a) / 2)
 
-  const point = (t) => `${Math.cos(t).toFixed(4)} ${Math.sin(t).toFixed(4)}`;
+  const point = (t) => `${Math.cos(t).toFixed(4)} ${Math.sin(t).toFixed(4)}`
 
-  return `M${point(a)}A${r.toFixed(4)} ${r.toFixed(4)} 0 0 0 ${point(b)}`;
+  return `M${point(a)}A${r.toFixed(4)} ${r.toFixed(4)} 0 0 0 ${point(b)}`
 }
 
 function buildPaths(corners, steps) {
-  const paths = [];
+  const paths = []
 
   steps.forEach((step, layer) => {
     for (let i = 0; i < corners; i += 1) {
-      const a = (2 * Math.PI * i) / corners;
-      const b = a + (2 * Math.PI * step) / corners;
+      const a = (2 * Math.PI * i) / corners
+      const b = a + (2 * Math.PI * step) / corners
 
       paths.push({
         d: geodesicPath(a, b),
         layer,
-      });
+      })
     }
-  });
+  })
 
-  return paths;
+  return paths
 }
 
-const LAYER_OPACITY = [0.9, 0.55, 0.38, 0.26];
+const LAYER_OPACITY = [0.9, 0.55, 0.38, 0.26]
 
-export default function PoincareDisk({ className = "", spin = false }) {
-  const paths = useMemo(() => buildPaths(14, [1, 2, 3, 4]), []);
+export default function PoincareDisk({ className = '', spin = false }) {
+  const paths = useMemo(() => buildPaths(14, [1, 2, 3, 4]), [])
 
   return (
     <svg
@@ -41,14 +41,9 @@ export default function PoincareDisk({ className = "", spin = false }) {
       stroke="currentColor"
       strokeLinecap="round"
     >
-      <circle
-        r="1"
-        strokeWidth="1.4"
-        vectorEffect="non-scaling-stroke"
-        opacity="0.8"
-      />
+      <circle r="1" strokeWidth="1.4" vectorEffect="non-scaling-stroke" opacity="0.8" />
 
-      <g className={spin ? "animate-[spin_35s_linear_infinite]" : undefined}>
+      <g className={spin ? 'animate-[spin_35s_linear_infinite]' : undefined}>
         {paths.map((p, index) => (
           <path
             key={index}
@@ -60,5 +55,5 @@ export default function PoincareDisk({ className = "", spin = false }) {
         ))}
       </g>
     </svg>
-  );
+  )
 }
