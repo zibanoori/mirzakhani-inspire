@@ -13,11 +13,7 @@ export default function Gallery() {
       intro="Moments captured from her journey."
       tinted={false}
     >
-
-    <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
-
-    </div>
-
-    </section>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+    </Section>
   )
 }
