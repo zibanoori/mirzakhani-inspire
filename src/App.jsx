@@ -13,23 +13,23 @@ function App() {
     <div className="min-h-screen bg-paper transition-colors duration-300 flex flex-col">
       <Navbar theme={theme} onToggle={toggleTheme} />
 
-      <main className="flex-grow flex flex-col items-center px-4 text-center py-20 sm:py-28">
-        <div className="mb-16 w-full max-w-sm mx-auto">
-          <Portrait />
+      <main className="flex-grow flex flex-col items-center px-4 py-20 sm:py-28">
+        <div className="w-full max-w-6xl mx-auto mb-16 flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
+          <div className="w-full md:w-1/3 flex justify-center">
+             <Portrait />
+          </div>
+          <div className="w-full md:w-2/3">
+            <Reveal delay={100}>
+              <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 text-ink">
+                {person.name}
+              </h1>
+
+              <p className="text-xl md:text-2xl font-sans leading-relaxed text-muted max-w-2xl">
+                {hero.lead}
+              </p>
+            </Reveal>
+          </div>
         </div>
-
-        {/* Hero Section */}
-        <Reveal delay={100}>
-          <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 text-ink">
-            {person.name}
-          </h1>
-
-          <p className="text-xl md:text-2xl font-sans leading-relaxed text-muted max-w-2xl mx-auto">
-            {hero.lead}
-          </p>
-        </Reveal>
-
-        {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 mb-16">
           {stats.map((stat, index) => (
             <div
@@ -42,8 +42,6 @@ function App() {
             </div>
           ))}
         </div>
-
-        {/* Timeline Section */}
         <Section
           id="timeline"
           eyebrow="Biography"
@@ -76,8 +74,6 @@ function App() {
           </div>
         </Section>
       </main>
-
-      {/* References Section */}
       <section className="py-16 px-4 w-full max-w-3xl mx-auto text-center">
         <h2 className="font-serif text-2xl text-ink mb-8">
           References & Further Reading
