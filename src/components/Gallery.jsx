@@ -4,4 +4,16 @@ import Section from './Section'
 
 export default function Gallery() {
   const [selectedImage, setselectedImage] = useState(null)
+
+  return (
+    <Section
+      id="gallery"
+      eyebrow="Visuals"
+      title="Gallery"
+      intro="Moments captured from her journey."
+      tinted={false}
+    >
+
+    </section>
+  )
 }
