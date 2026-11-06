@@ -14,6 +14,10 @@ export default function Gallery() {
       tinted={false}
     >
 
+    <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+
+    </div>
+
     </section>
   )
 }
