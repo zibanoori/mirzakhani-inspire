@@ -1,13 +1,13 @@
-import { useTheme } from "./useTheme";
-import { person, hero, stats, timeline, references } from "./data/content";
-import Reveal from "./components/Reveal";
-import Section from "./components/Section";
-import Navbar from "./components/Navbar";
-import Portrait from "./components/Portrait";
-import "./App.css";
+import { useTheme } from './useTheme'
+import { person, hero, stats, timeline, references } from './data/content'
+import Reveal from './components/Reveal'
+import Section from './components/Section'
+import Navbar from './components/Navbar'
+import Portrait from './components/Portrait'
+import './App.css'
 
 function App() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme()
 
   return (
     <div className="min-h-screen bg-paper transition-colors duration-300 flex flex-col">
@@ -16,7 +16,7 @@ function App() {
       <main className="flex-grow flex flex-col items-center px-4 py-20 sm:py-28">
         <div className="w-full max-w-6xl mx-auto mb-16 flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
           <div className="w-full md:w-1/3 flex justify-center">
-             <Portrait />
+            <Portrait />
           </div>
           <div className="w-full md:w-2/3">
             <Reveal delay={100}>
@@ -32,10 +32,7 @@ function App() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 mb-16">
           {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="p-4 border border-line rounded-lg bg-surface"
-            >
+            <div key={index} className="p-4 border border-line rounded-lg bg-surface">
               <stat.icon className="text-accent mx-auto mb-2" size={24} />
               <h3 className="font-bold text-ink">{stat.title}</h3>
               <p className="text-sm text-muted">{stat.value}</p>
@@ -57,16 +54,12 @@ function App() {
                   <div className="p-5 border border-line rounded-xl bg-surface shadow-sm hover:shadow-md transition-shadow">
                     <div className="flex flex-wrap items-center gap-2 mb-2">
                       <item.icon className="text-accent" />
-                      <h3 className="font-bold text-lg text-ink">
-                        {item.title}
-                      </h3>
+                      <h3 className="font-bold text-lg text-ink">{item.title}</h3>
                       <span className="text-xs font-mono text-gold bg-accent-soft px-2 py-1 rounded-full">
                         {item.year}
                       </span>
                     </div>
-                    <p className="text-muted text-sm leading-relaxed">
-                      {item.description}
-                    </p>
+                    <p className="text-muted text-sm leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               </Reveal>
@@ -75,9 +68,7 @@ function App() {
         </Section>
       </main>
       <section className="py-16 px-4 w-full max-w-3xl mx-auto text-center">
-        <h2 className="font-serif text-2xl text-ink mb-8">
-          References & Further Reading
-        </h2>
+        <h2 className="font-serif text-2xl text-ink mb-8">References & Further Reading</h2>
         <div className="flex flex-wrap justify-center gap-4 text-sm">
           {references.map((ref, index) => (
             <a
@@ -99,7 +90,7 @@ function App() {
         </p>
       </footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
