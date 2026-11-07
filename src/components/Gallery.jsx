@@ -20,7 +20,11 @@ export default function Gallery() {
             className="group relative aspect-[4/3] overflow-hidden rounded-xl cursor-pointer shadow-md hover:shadow-xl transition-all"
             onClick={() => setselectedImage(img)}
           >
-            <img src="" alt="" />
+            <img
+              src={img.src}
+              alt={img.caption}
+              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
           </div>
         ))}
       </div>
