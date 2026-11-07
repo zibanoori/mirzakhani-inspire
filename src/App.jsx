@@ -84,7 +84,7 @@ function App() {
           ))}
         </div>
       </section>
-
+      <Gallery />
       <footer className="py-8 text-center border-t border-line">
         <p className="text-xs text-muted">
           © 2026 Mirzakhani Inspire · A tribute to Maryam Mirzakhani
