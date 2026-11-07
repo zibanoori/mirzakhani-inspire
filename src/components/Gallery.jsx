@@ -29,6 +29,13 @@ export default function Gallery() {
           </div>
         ))}
       </div>
+
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
+          onClick={() => setSelectedImage(null)}
+        ></div>
+      )}
     </Section>
   )
 }
