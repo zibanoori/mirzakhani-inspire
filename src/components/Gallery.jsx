@@ -42,6 +42,12 @@ export default function Gallery() {
             >
               ✕
             </button>
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.caption}
+              className="w-full rounded-lg shadow-2xl"
+            />
+            <p className="text-center text-white mt-4 font-serif">{selectedImage.caption}</p>
           </div>
         </div>
       )}
