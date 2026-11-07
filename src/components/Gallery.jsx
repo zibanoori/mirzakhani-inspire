@@ -13,7 +13,17 @@ export default function Gallery() {
       intro="Moments captured from her journey."
       tinted={false}
     >
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {gallery.map((img) => (
+          <div
+            key={img.id}
+            className="group relative aspect-[4/3] overflow-hidden rounded-xl cursor-pointer shadow-md hover:shadow-xl transition-all"
+            onClick={() => setselectedImage(img)}
+          >
+            <img src="" alt="" />
+          </div>
+        ))}
+      </div>
     </Section>
   )
 }
