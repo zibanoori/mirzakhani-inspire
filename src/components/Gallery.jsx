@@ -34,7 +34,16 @@ export default function Gallery() {
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
           onClick={() => setSelectedImage(null)}
-        ></div>
+        >
+          <div className="relative max-w-4xl w-full animate-fade-in">
+            <button
+              className="absolute -top-10 right-0 text-white hover:text-gold text-2xl"
+              onClick={() => setSelectedImage(null)}
+            >
+              ✕
+            </button>
+          </div>
+        </div>
       )}
     </Section>
   )
