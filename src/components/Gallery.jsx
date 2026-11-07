@@ -3,7 +3,7 @@ import { gallery } from '../data/content'
 import Section from './Section'
 
 export default function Gallery() {
-  const [selectedImage, setselectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState(null)
 
   return (
     <Section
@@ -29,7 +29,6 @@ export default function Gallery() {
           </div>
         ))}
       </div>
-
       {selectedImage && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
