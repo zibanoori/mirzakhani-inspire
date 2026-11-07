@@ -18,13 +18,14 @@ export default function Gallery() {
           <div
             key={img.id}
             className="group relative aspect-[4/3] overflow-hidden rounded-xl cursor-pointer shadow-md hover:shadow-xl transition-all"
-            onClick={() => setselectedImage(img)}
+            onClick={() => setSelectedImage(img)}
           >
             <img
               src={img.src}
               alt={img.caption}
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
           </div>
         ))}
       </div>
