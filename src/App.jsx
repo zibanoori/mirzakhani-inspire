@@ -15,6 +15,7 @@ function App() {
       <Navbar theme={theme} onToggle={toggleTheme} />
 
       <main className="flex-grow flex flex-col items-center px-4 py-20 sm:py-28">
+        {/* Hero Section */}
         <div className="w-full max-w-6xl mx-auto mb-16 flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
           <div className="w-full md:w-1/3 flex justify-center">
             <Portrait />
@@ -31,6 +32,8 @@ function App() {
             </Reveal>
           </div>
         </div>
+
+        {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="p-4 border border-line rounded-lg bg-surface">
@@ -40,6 +43,8 @@ function App() {
             </div>
           ))}
         </div>
+
+        {/* Timeline Section */}
         <Section
           id="timeline"
           eyebrow="Biography"
@@ -68,6 +73,11 @@ function App() {
           </div>
         </Section>
       </main>
+
+      {/* Gallery Sections */}
+      <Gallery />
+
+      {/* References Section (Moved to bottom) */}
       <section className="py-16 px-4 w-full max-w-3xl mx-auto text-center">
         <h2 className="font-serif text-2xl text-ink mb-8">References & Further Reading</h2>
         <div className="flex flex-wrap justify-center gap-4 text-sm">
@@ -84,7 +94,7 @@ function App() {
           ))}
         </div>
       </section>
-      <Gallery />
+
       <footer className="py-8 text-center border-t border-line">
         <p className="text-xs text-muted">
           © 2026 Mirzakhani Inspire · A tribute to Maryam Mirzakhani
