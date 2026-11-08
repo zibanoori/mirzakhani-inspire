@@ -77,6 +77,7 @@ function App() {
 
       {/* Gallery Sections */}
       <Gallery />
+      <Quote />
 
       {/* References Section (Moved to bottom) */}
       <section className="py-16 px-4 w-full max-w-3xl mx-auto text-center">
