@@ -9,5 +9,9 @@ export default function Quote() {
     setCurrentQuote(quotes[randomIndex])
   }
 
-  return <section className="py-16 px-4 text-center bg-surface border-t border-line"></section>
+  return (
+    <section className="py-16 px-4 text-center bg-surface border-t border-line">
+      <div className="max-w-3xl mx-auto"></div>
+    </section>
+  )
 }
