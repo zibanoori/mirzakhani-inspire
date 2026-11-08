@@ -5,6 +5,7 @@ import Section from './components/Section'
 import Navbar from './components/Navbar'
 import Portrait from './components/Portrait'
 import Gallery from './components/Gallery'
+import Quote from './components/Quote'
 import './App.css'
 
 function App() {
