@@ -12,7 +12,9 @@ export default function Quote() {
   return (
     <section className="py-16 px-4 text-center bg-surface border-t border-line">
       <div className="max-w-3xl mx-auto">
-        <blockquote className="font-serif text-txl md:text-3xl text-ink italic leading-relaxed"></blockquote>
+        <blockquote className="font-serif text-txl md:text-3xl text-ink italic leading-relaxed">
+          "{currentQuote}"
+        </blockquote>
       </div>
     </section>
   )
