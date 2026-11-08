@@ -209,3 +209,9 @@ export const gallery = [
     caption: 'Working on mathematical diagrams',
   },
 ]
+
+export const quotes = [
+  'The beauty of mathematics only shows itself to more patient followers.',
+  'It is fun – it’s like solving a puzzle or connecting the dots in a big picture.',
+  "I don't have any particular recipe... It is the reason why you do things that gives you excitement and energy.",
+]
