@@ -8,4 +8,6 @@ export default function Quote() {
     const randomIndex = Math.floor(Math.random() * quotes.length)
     setCurrentQuote(quotes[randomIndex])
   }
+
+  return <section className="py-16 px-4 text-center bg-surface border-t border-line"></section>
 }
