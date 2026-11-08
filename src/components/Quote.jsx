@@ -15,6 +15,13 @@ export default function Quote() {
         <blockquote className="font-serif text-txl md:text-3xl text-ink italic leading-relaxed">
           "{currentQuote}"
         </blockquote>
+
+        <button
+          onClick={changeQuote}
+          className="text-sm font-mono text-gold hover:text-zccent transition-colors uppercase tracking-widest"
+        >
+          Next Inspiration ↻
+        </button>
       </div>
     </section>
   )
