@@ -16,6 +16,7 @@ function Countdown() {
       return {
         days: Math.floor(differrence / (1000 * 60 * 60 * 24)),
         hourse: Math.floor((differrence / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((differrence / 1000 / 60) % 60),
       }
     }
   })
