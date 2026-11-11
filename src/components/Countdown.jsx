@@ -28,4 +28,6 @@ function Countdown() {
 
     return () => clearInterval(timer)
   }, [])
+
+  return <div className="flex gap-4 justify-center text-xs font-mono text-muted"></div>
 }
