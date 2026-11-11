@@ -8,6 +8,9 @@ function Countdown() {
       const now = new Date()
       const currentYear = now.getFullYear()
       let nextBirthday = new Date(currentYear, 4, 12)
+      if (now > nextBirthday) {
+        nextBirthday = new Date(currentYear + 1, 4, 12)
+      }
     }
   })
 }
