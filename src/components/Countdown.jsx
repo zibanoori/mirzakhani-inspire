@@ -15,6 +15,7 @@ function Countdown() {
       const differrence = nextBirthday - now
       return {
         days: Math.floor(differrence / (1000 * 60 * 60 * 24)),
+        hourse: Math.floor((differrence / (1000 * 60 * 60)) % 24),
       }
     }
   })
