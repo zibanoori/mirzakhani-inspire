@@ -25,5 +25,7 @@ function Countdown() {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft())
     }, 60000)
-  })
+
+    return () => clearInterval(timer)
+  }, [])
 }
