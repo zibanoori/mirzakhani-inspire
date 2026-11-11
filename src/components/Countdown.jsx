@@ -7,6 +7,7 @@ function Countdown() {
     const calculateTimLeft = () => {
       const now = new Date()
       const currentYear = now.getFullYear()
+      let nextBirthday = new Date(currentYear, 4, 12)
     }
   })
 }
