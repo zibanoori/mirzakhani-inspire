@@ -99,6 +99,10 @@ function App() {
       </section>
 
       <footer className="py-8 text-center border-t border-line">
+        <div className="mb-4">
+          <p className="text-sm text-ink mb-2">Next Birthday Countdown:</p>
+          <Countdown />
+        </div>
         <p className="text-xs text-muted">
           © 2026 Mirzakhani Inspire · A tribute to Maryam Mirzakhani
         </p>
