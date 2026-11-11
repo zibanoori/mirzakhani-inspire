@@ -39,6 +39,11 @@ function Countdown() {
         <span className="block text-lg font-bold text-gold ">{timeLeft.hours}</span>
         Hours
       </div>
+
+      <div className="text-center">
+        <span className="block text-lg font-bold text-gold">{timeLeft.minutes}</span>
+        Mins
+      </div>
     </div>
   )
 }
