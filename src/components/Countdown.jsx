@@ -35,6 +35,7 @@ function Countdown() {
         <span className="block text-lg  font-bold text-gold">{timeLeft.days}</span>
         Days
       </div>
+      <div className="text-center"></div>
     </div>
   )
 }
