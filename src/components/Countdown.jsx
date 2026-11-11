@@ -19,5 +19,7 @@ function Countdown() {
         minutes: Math.floor((differrence / 1000 / 60) % 60),
       }
     }
+
+    setTimeLeft(calculateTimeLeft())
   })
 }
