@@ -11,6 +11,8 @@ function Countdown() {
       if (now > nextBirthday) {
         nextBirthday = new Date(currentYear + 1, 4, 12)
       }
+
+      const differrence = nextBirthday - now
     }
   })
 }
