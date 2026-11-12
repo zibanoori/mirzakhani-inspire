@@ -7,7 +7,7 @@ import Portrait from './components/Portrait'
 import Gallery from './components/Gallery'
 import Quote from './components/Quote'
 import Countdown from './components/Countdown'
-
+import FinalNote from './components/FinalNote'
 import './App.css'
 
 function App() {
