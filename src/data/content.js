@@ -215,3 +215,5 @@ export const quotes = [
   'It is fun – it’s like solving a puzzle or connecting the dots in a big picture.',
   "I don't have any particular recipe... It is the reason why you do things that gives you excitement and energy.",
 ]
+export const finalNote =
+  'Her legacy continues to inspire the next generation of mathematicians around the world.'
