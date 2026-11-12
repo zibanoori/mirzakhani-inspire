@@ -80,6 +80,7 @@ function App() {
       {/* Gallery Sections */}
       <Gallery />
       <Quote />
+      <FinalNote />
 
       {/* References Section (Moved to bottom) */}
       <section className="py-16 px-4 w-full max-w-3xl mx-auto text-center">
@@ -98,8 +99,6 @@ function App() {
           ))}
         </div>
       </section>
-
-      <FinalNote />
 
       <footer className="py-8 text-center border-t border-line">
         <div className="mb-4">
